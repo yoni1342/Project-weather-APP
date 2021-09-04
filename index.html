@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   />
+
+   <style>
+     #map{
+       height: 500px;
+       width: 900px;
+       margin: 2rem;
+       border: 2px, solid ;
+     }
+   </style>
+    <title>ዜና አየር</title>
+</head>
+<body>
+  
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand"> ዜና አየር</a>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="City Name"
+              aria-label="Search"
+              id="inputvalue"
+            />
+            <button class="btn btn-outline-success" type="submit" id="search">
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+      <div class="container">
+        <h1>ዜና አየር</h1>
+        <p>welcome to zena air weather app </p>
+        
+      </div>
+      <div id='map'></div>
+      <!-- <div id="mapid"></div> -->
+      <!-- type="module" -->
+      <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   ></script>
+      <script  src="app.js"></script>
+</body>
+</html>
